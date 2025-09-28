@@ -24,3 +24,24 @@ Pengguna memilih salah satu opsi menu:
 
 Semua logika CRUD dijalankan di dalam FasilitasService.
 Fasilitas hanya digunakan untuk menyimpan atribut dasar dan method abstract.
+
+## Struktur Packages
+### package com.mycompany.main
+1. Main
+- Titik awal eksekusi program.
+- Menyediakan menu berbasis console untuk mengelola data.
+- Memanggil layanan dari FasilitasService.
+
+### package models
+1. Fasilitas → abstract class dengan atribut idFasilitas, namaFasilitas, status, serta method abstract tampilkanInfo().
+2. Deskripsi → interface dengan method tampilkanDeskripsi().
+3. FasilitasOlahraga → subclass Fasilitas + implementasi Deskripsi, override tampilkanInfo() dengan label [Olahraga].
+4. FasilitasUmum → subclass Fasilitas + implementasi Deskripsi, override tampilkanInfo() dengan label [Umum].
+
+### package service
+1. FasilitasService
+- Menyimpan data fasilitas dalam ArrayList.
+- Menyediakan operasi CRUD (tambah, lihat, update, hapus, cari).
+- Overloading cariFasilitas() → pencarian bisa dengan Scanner atau langsung dengan String.
+- Memanfaatkan polymorphism saat memanggil tampilkanInfo().
+- Mendukung abstraksi dengan pemanggilan interface Deskripsi.
