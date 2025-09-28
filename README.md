@@ -26,6 +26,8 @@ Semua logika CRUD dijalankan di dalam FasilitasService.
 Fasilitas hanya digunakan untuk menyimpan atribut dasar dan method abstract.
 
 ## Struktur Packages
+#### <img width="377" height="297" alt="image" src="https://github.com/user-attachments/assets/f7305e3c-df13-487d-b278-fbaf897dbdee" />
+
 ### package com.mycompany.main
 1. Main
 - Titik awal eksekusi program.
