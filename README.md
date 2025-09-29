@@ -66,12 +66,12 @@ public class FasilitasOlahraga extends Fasilitas implements Deskripsi {
 
     @Override
     public void tampilkanDeskripsi() {
-        System.out.println("Fasilitas olahraga menunjang latihan fisik, seperti treadmill dan barbel.");
+        System.out.println("Fasilitas olahraga dapat membantu dalam meningkatkan kualitas fisik");
     }
 }
 
 ```
-Class FasilitasOlahraga dalam package models adalah subclass dari Fasilitas yang juga mengimplementasikan interface Deskripsi, sehingga selain mewarisi atribut dasar (id, nama, status) dari superclass, class ini wajib mengisi method abstract tampilkanInfo() dari Fasilitas dan tampilkanDeskripsi() dari Deskripsi; pada tampilkanInfo(), informasi fasilitas ditampilkan dengan tambahan label [Olahraga] agar berbeda dengan kategori lain, sedangkan pada tampilkanDeskripsi() diberikan penjelasan khusus bahwa fasilitas ini menunjang latihan fisik seperti treadmill dan barbel, sehingga class ini menunjukkan penerapan konsep inheritance, overriding, dan abstraction dalam OOP.
+Class FasilitasOlahraga dalam package models adalah subclass dari Fasilitas yang juga mengimplementasikan interface Deskripsi, sehingga selain mewarisi atribut dasar (id, nama, status) dari superclass, class ini wajib mengisi method abstract tampilkanInfo() dari Fasilitas dan tampilkanDeskripsi() dari Deskripsi; pada tampilkanInfo(), informasi fasilitas ditampilkan dengan tambahan label [Olahraga] agar berbeda dengan kategori lain, sedangkan pada tampilkanDeskripsi() diberikan penjelasan khusus bahwa fasilitas ini membantu dalam meningkatkan kualitas fisik, sehingga class ini menunjukkan penerapan konsep inheritance, overriding, dan abstraction dalam OOP.
 ```
 package models;
 
@@ -129,12 +129,12 @@ public class FasilitasUmum extends Fasilitas implements Deskripsi {
 
     @Override
     public void tampilkanDeskripsi() {
-        System.out.println("Fasilitas umum mendukung kenyamanan, seperti ruang ganti dan shower.");
+        System.out.println("Fasilitas umum mendukung kenyamanan setiap pemakai fasilitas.");
     }
 }
 
 ```
-Kode FasilitasUmum di atas adalah subclass dari Fasilitas yang juga mengimplementasikan interface Deskripsi. Pada class ini, constructor digunakan untuk memanggil constructor superclass melalui super(...) agar atribut dasar (idFasilitas, namaFasilitas, dan status) dapat diinisialisasi. Method abstrak tampilkanInfo() dari superclass dioverride untuk menampilkan informasi fasilitas dengan tambahan label [Umum], sedangkan method tampilkanDeskripsi() dari interface diimplementasikan untuk memberikan penjelasan bahwa fasilitas umum mendukung kenyamanan seperti ruang ganti dan shower. Dengan demikian, class ini menunjukkan penerapan konsep inheritance, abstraction, overriding, dan interface implementation dalam OOP.
+Kode FasilitasUmum di atas adalah subclass dari Fasilitas yang juga mengimplementasikan interface Deskripsi. Pada class ini, constructor digunakan untuk memanggil constructor superclass melalui super(...) agar atribut dasar (idFasilitas, namaFasilitas, dan status) dapat diinisialisasi. Method abstrak tampilkanInfo() dari superclass dioverride untuk menampilkan informasi fasilitas dengan tambahan label [Umum], sedangkan method tampilkanDeskripsi() dari interface diimplementasikan untuk memberikan penjelasan bahwa fasilitas umum mendukung kenyamanan setiap pemakai fasilitas. Dengan demikian, class ini menunjukkan penerapan konsep inheritance, abstraction, overriding, dan interface implementation dalam OOP.
 
 ```
 package models;
@@ -307,20 +307,24 @@ Class Main adalah titik awal eksekusi program yang menyediakan menu interaktif b
 
 #Penjelasan Output Terbaru
 
-#### <img width="518" height="384" alt="image" src="https://github.com/user-attachments/assets/ac7b454e-531c-4e08-a2a3-2463c13124e3" />
+#### <img width="489" height="398" alt="image" src="https://github.com/user-attachments/assets/65dce98c-0582-4891-b02a-42b814402957" />
 ini adalah output terbaru dari menu 1 yaitu tambah fasilitas, disini user dapat menambah fasilitas sesuai dengan jenisnya ada fasilitas olahraga dan umum
 
-#### <img width="681" height="380" alt="image" src="https://github.com/user-attachments/assets/6a01a50b-43a4-463f-81b1-5afbf6648b79" />
+#### <img width="694" height="390" alt="image" src="https://github.com/user-attachments/assets/7dd930ad-da3a-4eff-88a0-7438cb0e8c79" />
 ini adalah output terbaru dari menu 2 yaitu lihat fasilitas, disini user dapat melihat fasilitas sesuai dengan jenisnya ada fasilitas olahraga dan umum
 
-#### <img width="711" height="693" alt="image" src="https://github.com/user-attachments/assets/d8f8eb10-fe3f-40c6-8332-63721288aca3" />
+#### <img width="753" height="725" alt="image" src="https://github.com/user-attachments/assets/87bd0c71-1c23-4c09-a970-3466acbe05f5" />
 ini adalah output dari menu 3 yaitu update fasilitas tidak ada perubahan output karena hanya meminta id dari fasilitas yang ingin diupdate
 
-#### <img width="691" height="618" alt="image" src="https://github.com/user-attachments/assets/5faee819-2050-46e7-aa55-45201c8ef138" />
+#### <img width="653" height="652" alt="image" src="https://github.com/user-attachments/assets/93c2d70a-8106-4125-a4c8-5aaf7c9e59f8" />
 ini adalah output dari menu 4 yaitu hapus fasilitas tidak ada perubahan output karena hanya meminta id dari fasilitas yang ingin dihapus
 
-#### <img width="700" height="298" alt="image" src="https://github.com/user-attachments/assets/49f817a1-e3f8-48b8-82ff-948998710fa0" />
+#### <img width="673" height="301" alt="image" src="https://github.com/user-attachments/assets/c0af2651-f0c3-4719-b4d1-777a19a803da" />
 ini adalah output dari menu 5 yaitu cari fasilitas tidak ada perubahan output karena hanya meminta nama dari fasilitas yang ingin dicari
+
+#### <img width="951" height="300" alt="image" src="https://github.com/user-attachments/assets/1fb77ad7-f295-413f-ab1f-abe38584d05a" />
+ini adalah output terbaru ada menu baru di no 6 yaitu lihat deskripsi fasilitas disini program meminta id fasilitas yang ingin dilihat deskripsinya lalu output akan memperlihatkan deskripsinya sesuai jenis fasilitasnya 
+
 
 
 
